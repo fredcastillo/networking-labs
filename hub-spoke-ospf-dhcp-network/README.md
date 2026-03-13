@@ -1,6 +1,6 @@
 🇪🇸 **Español** | 🇬🇧 [English](README-EN.md)
 
-# Hub-and-Spoke OSPF Network with DHCP
+### Hub-and-Spoke OSPF Network with DHCP
 
 <div align="center">
    
@@ -38,7 +38,7 @@ La red sigue un diseño clásico de concentrador (hub) y radios (spoke):
 *   **Routers Provinciales (PROVINCIA1 a PROVINCIA8):** Actúan como "spokes". Cada uno se conecta al hub mediante enlaces seriales punto a punto. Proveen conectividad a sus respectivas redes LAN.
 *   **Switches y Hosts:** Cada provincia cuenta con switches de capa de acceso que conectan múltiples PCs, las cuales obtienen su configuración IP dinámicamente del servidor DHCP central.
 
-### Esquema de Direccionamiento IP
+## Esquema de Direccionamiento IP
 
 *   **Enlaces WAN (Seriales):** Redes `/30` para maximizar el espacio de direccionamiento.
     *   Conexión a PROVINCIA #1: `192.168.21.0/30`
@@ -64,7 +64,7 @@ La red sigue un diseño clásico de concentrador (hub) y radios (spoke):
 
 Las configuraciones completas de todos los dispositivos están disponibles en la carpeta [`/configs`](./configs/).
 
-### Router Central (SEDE_CENTRAL_0) - Extracto
+## Router Central (SEDE_CENTRAL_0) - Extracto
 ```cisco
 !
 hostname SEDE_CENTRAL_0
@@ -92,7 +92,7 @@ line con 0
  login
 !
 ```
-### Router Provincial (PROVINCIA#1) - Extracto
+## Router Provincial (PROVINCIA#1) - Extracto
 ```cisco
 !
 hostname PROVINCIA#1
@@ -179,6 +179,7 @@ Este proyecto está bajo la licencia MIT. Ver el archivo LICENSE para más detal
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Fred%20Castillo-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/fredcastillo11/)
 [![GitHub](https://img.shields.io/badge/GitHub-fredcastillo-100000?style=for-the-badge&logo=github)](https://github.com/fredcastillo)
+
 
 
 
