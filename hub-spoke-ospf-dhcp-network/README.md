@@ -1,6 +1,6 @@
 🇪🇸 **Español** | 🇬🇧 [English](README-EN.md)
 
-# 🌐 Hub-and-Spoke OSPF Network with DHCP
+# Hub-and-Spoke OSPF Network with DHCP
 
 <div align="center">
    
@@ -179,6 +179,7 @@ Este proyecto está bajo la licencia MIT. Ver el archivo LICENSE para más detal
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Fred%20Castillo-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/fredcastillo11/)
 [![GitHub](https://img.shields.io/badge/GitHub-fredcastillo-100000?style=for-the-badge&logo=github)](https://github.com/fredcastillo)
+
 
 
 
