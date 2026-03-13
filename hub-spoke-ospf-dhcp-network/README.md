@@ -4,8 +4,7 @@
 <img width="483" height="394" alt="image" src="https://github.com/user-attachments/assets/a0a477b2-ce50-4311-81db-7e6d40b59624" />
 
 <div align="center">
-
-[🇪🇸 Español](README.md) | [🇬🇧 English](README-EN.md)
+<img width="583" height="494" alt="image" src="https://github.com/user-attachments/assets/a0a477b2-ce50-4311-81db-7e6d40b59624" />
 
 ![Cisco](https://img.shields.io/badge/Cisco-Networking-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)
 ![Packet Tracer](https://img.shields.io/badge/Simulator-Cisco%20Packet%20Tracer-blue?style=for-the-badge)
@@ -181,4 +180,5 @@ Este proyecto está bajo la licencia MIT. Ver el archivo LICENSE para más detal
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Fred%20Castillo-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/fredcastillo11/)
 [![GitHub](https://img.shields.io/badge/GitHub-fredcastillo-100000?style=for-the-badge&logo=github)](https://github.com/fredcastillo)
+
 
