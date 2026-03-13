@@ -1,0 +1,210 @@
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname SEDE_CENTRAL_0
+!
+!
+!
+enable secret 5 $1$mERr$/VT.EosIwbboaDHzZXq7r1
+!
+!
+ip dhcp excluded-address 192.168.1.1
+ip dhcp excluded-address 192.168.2.1
+ip dhcp excluded-address 192.168.3.1
+ip dhcp excluded-address 192.168.4.1
+ip dhcp excluded-address 192.168.5.1
+ip dhcp excluded-address 192.168.6.1
+ip dhcp excluded-address 192.168.7.1
+ip dhcp excluded-address 192.168.8.1
+ip dhcp excluded-address 192.168.9.1
+ip dhcp excluded-address 192.168.10.1
+ip dhcp excluded-address 192.168.11.1
+ip dhcp excluded-address 192.168.12.1
+ip dhcp excluded-address 192.168.13.1
+ip dhcp excluded-address 192.168.14.1
+ip dhcp excluded-address 192.168.15.1
+ip dhcp excluded-address 192.168.16.1
+!
+ip dhcp pool RED1
+ network 192.168.1.0 255.255.255.0
+ default-router 192.168.1.1
+ip dhcp pool RED2
+ network 192.168.2.0 255.255.255.0
+ default-router 192.168.2.1
+ip dhcp pool RED3
+ network 192.168.3.0 255.255.255.0
+ default-router 192.168.3.1
+ip dhcp pool RED4
+ network 192.168.4.0 255.255.255.0
+ default-router 192.168.4.1
+ip dhcp pool RED5
+ network 192.168.5.0 255.255.255.0
+ default-router 192.168.5.1
+ip dhcp pool RED6
+ network 192.168.6.0 255.255.255.0
+ default-router 192.168.6.1
+ip dhcp pool RED7
+ network 192.168.7.0 255.255.255.0
+ default-router 192.168.7.1
+ip dhcp pool RED8
+ network 192.168.8.0 255.255.255.0
+ default-router 192.168.8.1
+ip dhcp pool RED9
+ network 192.168.9.0 255.255.255.0
+ default-router 192.168.9.1
+ip dhcp pool RED10
+ network 192.168.10.0 255.255.255.0
+ default-router 192.168.10.1
+ip dhcp pool RED11
+ network 192.168.11.0 255.255.255.0
+ default-router 192.168.11.1
+ip dhcp pool RED12
+ network 192.168.12.0 255.255.255.0
+ default-router 192.168.12.1
+ip dhcp pool RED13
+ network 192.168.13.0 255.255.255.0
+ default-router 192.168.13.1
+ip dhcp pool RED14
+ network 192.168.14.0 255.255.255.0
+ default-router 192.168.14.1
+ip dhcp pool RED15
+ network 192.168.15.0 255.255.255.0
+ default-router 192.168.15.1
+ip dhcp pool RED16
+ network 192.168.16.0 255.255.255.0
+ default-router 192.168.16.1
+!
+!
+!
+no ip cef
+no ipv6 cef
+!
+!
+!
+!
+license udi pid CISCO2911/K9 sn FTX1524LYSL-
+!
+!
+!
+!
+
+!
+!
+!
+!
+!
+!
+no ip domain-lookup
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface GigabitEthernet0/1
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface GigabitEthernet0/2
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface Serial0/0/0
+ description Conexin con provincia #1
+ ip address 192.168.21.1 255.255.255.252
+ clock rate 56000
+!
+interface Serial0/0/1
+ description Conexin con provincia #2
+ ip address 192.168.22.1 255.255.255.252
+ clock rate 56000
+!
+interface Serial0/1/0
+ description Conexin con provincia #3
+ ip address 192.168.23.1 255.255.255.252
+ clock rate 56000
+!
+interface Serial0/1/1
+ description Conexin con provincia #4
+ ip address 192.168.24.1 255.255.255.252
+ clock rate 56000
+!
+interface Serial0/2/0
+ description Conexin con provincia #5
+ ip address 192.168.17.1 255.255.255.252
+ clock rate 56000
+!
+interface Serial0/2/1
+ description Conexin con provincia #6
+ ip address 192.168.18.1 255.255.255.252
+ clock rate 56000
+!
+interface Serial0/3/0
+ description Conexin con provincia #7
+ ip address 192.168.19.1 255.255.255.252
+ clock rate 56000
+!
+interface Serial0/3/1
+ description Conexin con provincia #8
+ ip address 192.168.20.1 255.255.255.252
+ clock rate 56000
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router ospf 1
+ router-id 1.0.0.0
+ log-adjacency-changes
+ network 192.168.17.0 0.0.0.3 area 0
+ network 192.168.18.0 0.0.0.3 area 0
+ network 192.168.19.0 0.0.0.3 area 0
+ network 192.168.20.0 0.0.0.3 area 0
+ network 192.168.21.0 0.0.0.3 area 0
+ network 192.168.22.0 0.0.0.3 area 0
+ network 192.168.23.0 0.0.0.3 area 0
+ network 192.168.24.0 0.0.0.3 area 0
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+!
+banner motd ^CFRED SNEYDER CASTILLO APOLINAR 2025-2175 12/03/2026 SECCION MARTES 8-10 AM^C
+!
+!
+!
+!
+line con 0
+ password cisco123
+ login
+!
+line aux 0
+!
+line vty 0 4
+ password cisco123
+ login
+line vty 5 15
+ password cisco123
+ login
+!
+!
+!
+end
