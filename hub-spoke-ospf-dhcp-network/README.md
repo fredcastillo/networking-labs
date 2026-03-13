@@ -20,7 +20,7 @@ Este repositorio contiene la simulación y configuración de una **red empresari
 
 El objetivo principal es demostrar la implementación de protocolos de red fundamentales (OSPF, DHCP) y buenas prácticas de configuración en un entorno corporativo simulado, mostrando habilidades clave para un perfil de **Ingeniería de Redes** o **Ciberseguridad**.
 
-## 🎯 Objetivos y Habilidades Demostradas
+## Objetivos y Habilidades Demostradas
 
 *   **Diseño de Red:** Implementación de una topología jerárquica **Hub-and-Spoke** para centralizar el enrutamiento y simplificar la gestión.
 *   **Enrutamiento Dinámico:** Configuración de **OSPF (Open Shortest Path First)** en área única (Area 0) para el descubrimiento automático de rutas y convergencia rápida.
@@ -115,7 +115,7 @@ router ospf 1
 
 Nota: El comando ip helper-address es crucial, ya que permite que el router provincial reenvíe las solicitudes DHCP de sus clientes locales al servidor DHCP central.
 
-##🖥️ Verificación de Conectividad
+## 🖥️ Verificación de Conectividad
 
 Se ha verificado el correcto funcionamiento de todos los servicios y la conectividad de extremo a extremo.
 
@@ -132,7 +132,7 @@ PC> ipconfig
 # Prueba de conectividad entre PCs de diferentes provincias
 PC> ping 192.168.15.10
 ```
-##📂 Estructura del Repositorio
+## 📂 Estructura del Repositorio
 
 ```
 networking-labs/
@@ -179,6 +179,7 @@ Este proyecto está bajo la licencia MIT. Ver el archivo LICENSE para más detal
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Fred%20Castillo-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/fredcastillo11/)
 [![GitHub](https://img.shields.io/badge/GitHub-fredcastillo-100000?style=for-the-badge&logo=github)](https://github.com/fredcastillo)
+
 
 
 
