@@ -2,7 +2,7 @@
 
 # 🌐 Laboratorios de Redes
 
-![Networking](https://img.shields.io/badge/Focus-Network%20Engineering-orange?style=for-the-badge)
+![Networking](https://img.shields.io/badge/Focus-Network%20Security-orange?style=for-the-badge)
 ![Cybersecurity](https://img.shields.io/badge/Interest-Cybersecurity-red?style=for-the-badge)
 ![Labs](https://img.shields.io/badge/Type-Network%20Labs-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-black?style=for-the-badge)
