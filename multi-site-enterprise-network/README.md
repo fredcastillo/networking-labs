@@ -64,7 +64,7 @@ Se aplican tecnologías y buenas prácticas de redes modernas, incluyendo enruta
 
 ### 🇯🇲 Jamaica
 - VLAN 70: Administración → 10.75.16.0/24 (175 hosts)
-- VLAN 80: Red → 10.75.16.0/24
+- VLAN 80: Red → 10.75.17.0/24 (200 hosts)
 - VLAN 90: No_usadas (seguridad)
 - VLAN 300: Native
 
