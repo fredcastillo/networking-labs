@@ -5,11 +5,20 @@
 <div align="center">
  
 [![Cisco](https://img.shields.io/badge/Cisco-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)](https://www.cisco.com/)
-[![Packet Tracer](https://img.shields.io/badge/Packet%20Tracer-8.2-1BA0D7?style=for-the-badge&logo=cisco)](https://www.netacad.com/)
-[![OSPF](https://img.shields.io/badge/OSPF-Dynamic%20Routing-005C8A?style=for-the-badge)](https://www.cisco.com/c/en/us/support/ip/open-shortest-path-first-ospf/tsd-products-support-series-home.html)
-[![VLAN](https://img.shields.io/badge/VLAN-Segmentation-008000?style=for-the-badge)](https://www.cisco.com/c/en/us/support/lan-switching/virtual-lan-vlan/tsd-products-support-series-home.html)
-[![LACP](https://img.shields.io/badge/LACP-EtherChannel-FF6600?style=for-the-badge)](https://www.cisco.com/c/en/us/tech/lan-switching/etherchannel/index.html)
-
+[![Packet Tracer](https://img.shields.io/badge/Cisco_Packet_Tracer-8.2-1BA0D7?style=for-the-badge&logo=cisco)](https://www.netacad.com/)
+[![OSPF](https://img.shields.io/badge/OSPF-Dynamic_Routing-005C8A?style=for-the-badge&logo=cisco)](https://www.cisco.com/c/en/us/support/ip/open-shortest-path-first-ospf/tsd-products-support-series-home.html)
+[![VLAN](https://img.shields.io/badge/VLAN-Segmentation-008000?style=for-the-badge&logo=cisco)](https://www.cisco.com/c/en/us/support/lan-switching/virtual-lan-vlan/tsd-products-support-series-home.html)
+[![EtherChannel](https://img.shields.io/badge/EtherChannel-LACP-FF6600?style=for-the-badge&logo=cisco)](https://www.cisco.com/c/en/us/tech/lan-switching/etherchannel/index.html)
+[![RSTP](https://img.shields.io/badge/RSTP-Rapid_PVST-4B0082?style=for-the-badge&logo=cisco)](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/16-9/configuration_guide/layer2/b_169_lay2_9300_cg/configuring_rapid_pvst.html)
+[![DHCP](https://img.shields.io/badge/DHCP-Centralized-2E8B57?style=for-the-badge&logo=dhcp)](https://www.cisco.com/c/en/us/support/ip/dynamic-host-configuration-protocol-dhcp/tsd-products-support-series-home.html)
+[![IPv4](https://img.shields.io/badge/IPv4-VLSM-FFD700?style=for-the-badge&logo=ipfs)](https://en.wikipedia.org/wiki/Variable-length_subnet_mask)
+[![PortFast](https://img.shields.io/badge/PortFast-BPDU_Guard-8A2BE2?style=for-the-badge&logo=cisco)](https://www.cisco.com/c/en/us/support/docs/lan-switching/spanning-tree-protocol/30957-portfast-bpduguard.html)
+[![Security](https://img.shields.io/badge/Security-Layer_2-FF0000?style=for-the-badge&logo=cisco)](https://www.cisco.com/c/en/us/products/security/what-is-network-security.html)
+[![Status](https://img.shields.io/badge/Status-Completed-00AA00?style=for-the-badge&logo=checkmarx)](https://github.com/fredcastillo)
+[![Tested](https://img.shields.io/badge/Tested-Packet_Tracer_8.2-9cf?style=for-the-badge&logo=cisco)](https://www.netacad.com/)
+[![Documentation](https://img.shields.io/badge/Documentation-Full-4CAF50?style=for-the-badge&logo=readthedocs)](https://github.com/fredcastillo)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Fred_Castillo-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fredcastillo11/)
+[![GitHub](https://img.shields.io/badge/GitHub-fredcastillo-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/fredcastillo)
 ![Topology](diagrams/topology.png)
 
 </div>
