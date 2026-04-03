@@ -88,7 +88,7 @@ Se aplican tecnologías y buenas prácticas de redes modernas, incluyendo enruta
 
 ---
 
-## 🌐 Enlaces WAN (anillo con R-RD como núcleo)
+## 🌐 Enlaces WAN 
 
 Cada enlace es `/30`. Red base: `200.21.75.0/24`.
 
@@ -150,7 +150,7 @@ router ospf 1
  network 200.21.75.12 0.0.0.3 area 0
 ```
 
-🔁 Subinterfaces en R-Colombia (Router-on-a-Stick)
+## 🔁 Subinterfaces en R-Colombia (Router-on-a-Stick)
 
 ``` cisco
 interface GigabitEthernet0/0.40
@@ -168,7 +168,7 @@ interface GigabitEthernet0/0.50
  ip helper-address 200.21.75.14
 ```
 
-🔗 LACP en Sw-Central-Venezuela (EtherChannel activo)
+## 🔗 LACP en Sw-Central-Venezuela (EtherChannel activo)
 
 ```cisco
 interface Port-channel1
@@ -182,7 +182,7 @@ interface FastEthernet0/2
  channel-group 1 mode active
 ```
 
-🛡️ Seguridad en puertos de acceso (Sw-vene3)
+## 🛡️ Seguridad en puertos de acceso (Sw-vene3)
 
 ```cisco
 interface FastEthernet0/6
@@ -190,7 +190,7 @@ interface FastEthernet0/6
  spanning-tree portfast
  spanning-tree bpduguard enable
 ```
-📡 IP Helper-Address en Sw-Central-Venezuela
+## 📡 IP Helper-Address en Sw-Central-Venezuela
 
 ```cisco
 interface Vlan10
@@ -198,14 +198,14 @@ interface Vlan10
  ip helper-address 200.21.75.1
 ```
 
-🌲 Spanning Tree Rapid-PVST y prioridad (Sw-Central-Jamaica)
+## 🌲 Spanning Tree Rapid-PVST y prioridad (Sw-Central-Jamaica)
 
 ```cisco
 spanning-tree mode rapid-pvst
 spanning-tree vlan 1,70,80,300 priority 24576
 ```
 
-🔍 Verificaciones reales (EtherChannel, trunk, STP)
+## 🔍 Verificaciones reales (EtherChannel, trunk, STP)
 
 ```cisco
 Sw-Central-Venezuela#show interfaces trunk
