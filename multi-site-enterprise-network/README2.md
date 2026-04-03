@@ -10,8 +10,6 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Fred%20Castillo-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/fredcastillo11/)
 [![GitHub](https://img.shields.io/badge/GitHub-fredcastillo-100000?style=for-the-badge&logo=github)](https://github.com/fredcastillo)
 
-<img width="583" height="494" alt="image" src="https://github.com/user-attachments/assets/a0a477b2-ce50-4311-81db-7e6d40b59624" />
-</div>
 <div align="center">
    
 ---
