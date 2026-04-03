@@ -1,5 +1,7 @@
 🇪🇸 **Español** | 🇬🇧 [English](README-EN.md)
 
+# 📡 multi-site-enterprise-network (OSPF + VLAN + DHCP + LACP)
+
 <div align="center">
  
 [![Cisco](https://img.shields.io/badge/Cisco-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)](https://www.cisco.com/)
@@ -13,8 +15,6 @@
 </div>
    
 ---
-
-# 📡 multi-site-enterprise-network (OSPF + VLAN + DHCP + LACP)
 
 ## 🧾 Descripción
 
