@@ -233,9 +233,11 @@ VLAN0070
 | Vecinos OSPF | ![OSPF Neighbors](screenshots/02_ospf_neighbors.png) |
 | DHCP Bindings | ![DHCP](screenshots/03_dhcp_bindings.png) |
 | EtherChannel Summary | ![EtherChannel](screenshots/04_etherchannel_summary.png) |
-| VLAN Brief | ![VLAN Brief](screenshots/05_vlan_brief.png) |
+| VTP Status | ![VTP Status](screenshots/05_vtp_status.png) |
 | Trunk ports | ![Trunk](screenshots/06_trunk_ports.png) |
 | PortFast + BPDUGuard | ![PortFast](screenshots/07_portfast_bpduguard.png) |
+| STP rapid | ![STP rapid](screenshots/08_stp_rapid.png) |
+| VLAN Brief | ![VLAN Brief](screenshots/09_vlan_brief.png) |
 
 ## 📁 Estructura del proyecto
 
