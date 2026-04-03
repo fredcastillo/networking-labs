@@ -289,15 +289,15 @@ show spanning-tree summary
 
 ## 🧪 Resultados obtenidos
 
-✔ Comunicación entre todas las VLANs (inter-VLAN routing)
-✔ Conectividad completa entre todas las sedes (anillo OSPF)
-✔ DHCP centralizado funcionando correctamente
-✔ Redundancia operativa con LACP (EtherChannel)
-✔ Convergencia rápida con Rapid-PVST
-✔ Seguridad aplicada en capa 2 (PortFast + BPDU Guard)
-✔ Interfaces no utilizadas apagadas (shutdown)
-✔ Relay DHCP mediante ip helper-address
-
+- ✔ Comunicación entre todas las VLANs (inter-VLAN routing)
+- ✔ Conectividad completa entre todas las sedes (anillo OSPF)
+- ✔ DHCP centralizado funcionando correctamente
+- ✔ Redundancia operativa con LACP (EtherChannel)
+- ✔ Convergencia rápida con Rapid-PVST
+- ✔ Seguridad aplicada en capa 2 (PortFast + BPDU Guard)
+- ✔ Interfaces no utilizadas apagadas (shutdown)
+- ✔ Relay DHCP mediante ip helper-address
+- 
 #### 👨‍💻 Autor
 
 **Fred Castillo**  
