@@ -37,7 +37,7 @@ Se aplican tecnologías y buenas prácticas de redes modernas, incluyendo enruta
 
 ---
 
-## 🧠 Características principales
+## Características principales
 
 ✅ Conectividad completa entre todas las sedes (topología en anillo con R-RD como núcleo)  
 ✅ Segmentación por departamentos usando VLANs  
