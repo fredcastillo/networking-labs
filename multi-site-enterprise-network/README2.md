@@ -142,15 +142,19 @@ ip dhcp pool JAMAICA-ADMIN
  dns-server 8.8.8.8
 ```
 
-🌐 OSPF en R-RD (enlaces seriales)
-cisco
+## 🌐 OSPF en R-RD (enlaces seriales)
+
+``` cisco
 router ospf 1
  router-id 1.1.1.1
  network 192.21.75.0 0.0.0.255 area 0
  network 200.21.75.0 0.0.0.3 area 0
  network 200.21.75.12 0.0.0.3 area 0
+```
+
 🔁 Subinterfaces en R-Colombia (Router-on-a-Stick)
-cisco
+
+``` cisco
 interface GigabitEthernet0/0.40
  description VLAN 40 VENTAS
  encapsulation dot1Q 40
@@ -164,8 +168,11 @@ interface GigabitEthernet0/0.50
  ip address 10.75.11.129 255.255.255.128
  ip helper-address 200.21.75.1
  ip helper-address 200.21.75.14
+```
+
 🔗 LACP en Sw-Central-Venezuela (EtherChannel activo)
-cisco
+
+```cisco
 interface Port-channel1
  switchport trunk native vlan 300
  switchport trunk allowed vlan 10,20,300
@@ -175,23 +182,34 @@ interface Port-channel1
 interface FastEthernet0/2
  channel-protocol lacp
  channel-group 1 mode active
+```
+
 🛡️ Seguridad en puertos de acceso (Sw-vene3)
-cisco
+
+```cisco
 interface FastEthernet0/6
  switchport access vlan 10
  spanning-tree portfast
  spanning-tree bpduguard enable
+```
 📡 IP Helper-Address en Sw-Central-Venezuela
-cisco
+
+```cisco
 interface Vlan10
  ip address 10.75.8.1 255.255.255.0
  ip helper-address 200.21.75.1
+```
+
 🌲 Spanning Tree Rapid-PVST y prioridad (Sw-Central-Jamaica)
-cisco
+
+```cisco
 spanning-tree mode rapid-pvst
 spanning-tree vlan 1,70,80,300 priority 24576
+```
+
 🔍 Verificaciones reales (EtherChannel, trunk, STP)
-cisco
+
+```cisco
 Sw-Central-Venezuela#show interfaces trunk
 Port        Mode         Encapsulation  Status        Native vlan
 Fa0/1       on           802.1q         trunking      300
@@ -207,15 +225,19 @@ Sw-Central-Jamaica#show spanning-tree vlan 70
 VLAN0070
   Root ID    Priority    24646
              This bridge is the root
-📸 Validaciones del laboratorio
-Prueba	Captura
-Ping entre VLANs	screenshots/01_ping_intervlan.png
-Vecinos OSPF	screenshots/02_ospf_neighbors.png
-DHCP Bindings	screenshots/03_dhcp_bindings.png
-EtherChannel Summary	screenshots/04_etherchannel_summary.png
-VTP Status (no usado, pero se puede mostrar show vlan brief)	screenshots/05_vlan_brief.png
-Trunk ports	screenshots/06_trunk_ports.png
-PortFast + BPDUGuard	screenshots/07_portfast_bpduguard.png
+```
+
+## 📸 Validaciones del laboratorio
+
+| Prueba | Captura |
+|--------|---------|
+| Ping entre VLANs | `screenshots/01_ping_intervlan.png` |
+| Vecinos OSPF | `screenshots/02_ospf_neighbors.png` |
+| DHCP Bindings | `screenshots/03_dhcp_bindings.png` |
+| EtherChannel Summary | `screenshots/04_etherchannel_summary.png` |
+| VLAN Brief (en lugar de VTP) | `screenshots/05_vlan_brief.png` |
+| Trunk ports | `screenshots/06_trunk_ports.png` |
+| PortFast + BPDUGuard | `screenshots/07_portfast_bpduguard.png` |
 
 ## 📁 Estructura del proyecto
 
@@ -252,22 +274,17 @@ Tri-Nation-Enterprise-Network/
 └── README-EN.md
 
 ## Cómo usar este proyecto
-Abrir el archivo .pkt en Cisco Packet Tracer 8.2 o superior.
 
+Abrir el archivo .pkt en Cisco Packet Tracer 8.2 o superior.
 Revisar las configuraciones completas en la carpeta /configs.
 
-Validar el funcionamiento con los siguientes comandos:
+**Validar el funcionamiento con los siguientes comandos:**
 
 ping (entre VLANs y entre países)
-
 show ip ospf neighbor
-
 show ip dhcp binding
-
 show etherchannel summary
-
 show interfaces trunk
-
 show spanning-tree summary
 
 ## 🧪 Resultados obtenidos
@@ -281,12 +298,10 @@ show spanning-tree summary
 ✔ Interfaces no utilizadas apagadas (shutdown)
 ✔ Relay DHCP mediante ip helper-address
 
-👨‍💻 Autor
+### 👨‍💻 Autor
 Fred Castillo
 Estudiante de Tecnólogo en Seguridad Informática
 Aspirante a Red Team | Seguridad Ofensiva
 
 https://img.shields.io/badge/LinkedIn-Fred%2520Castillo-0077B5?style=for-the-badge&logo=linkedin
 https://img.shields.io/badge/GitHub-fredcastillo-100000?style=for-the-badge&logo=github
-
-
