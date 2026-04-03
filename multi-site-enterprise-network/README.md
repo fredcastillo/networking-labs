@@ -18,7 +18,7 @@
 
 ## 🧾 Descripción
 
-Este proyecto consiste en el diseño e implementación de una red empresarial distribuida en cuatro sedes (República Dominicana, Jamaica, Colombia y Venezuela), simulada en **Cisco Packet Tracer 8.2**.
+Este proyecto consiste en el diseño e implementación de una red empresarial distribuida en cuatro sedes (República Dominicana, Jamaica, Colombia y Venezuela), simulada en **Cisco Packet Tracer**.
 
 Se aplican tecnologías y buenas prácticas de redes modernas, incluyendo enrutamiento dinámico OSPF, segmentación mediante VLANs, redundancia de enlaces con LACP, DHCP centralizado y medidas de seguridad en capa 2.
 
