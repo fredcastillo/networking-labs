@@ -102,6 +102,12 @@ Cada enlace es `/30`. Red base: `200.21.75.0/24`.
 ---
 
 ## 🔗 Enlaces Router ↔ Switch Capa 3
+| País      | Red               | IP Router | IP Switch Central |
+|-----------|-------------------|-----------|-------------------|
+| Venezuela | 172.20.75.0/30    | .1        | .2                |
+| Colombia  | No aplica         | -         | -                 |
+| Jamaica   | 172.10.75.0/30    | .1        | .2                |
+
 
 | País      | Red               | IP Router | IP Switch Central |
 |-----------|-------------------|-----------|-------------------|
@@ -109,7 +115,7 @@ Cada enlace es `/30`. Red base: `200.21.75.0/24`.
 | Colombia  | No aplica (router conecta directamente a switch de acceso mediante subinterfaces) | - | - |
 | Jamaica   | 172.10.75.0/30    | .1        | .2                |
 
-> **Nota:** En Colombia, el router R-Colombia no tiene un switch central de capa 3; sus subinterfaces (`G0/0.40` y `G0/0.50`) se conectan directamente a un switch de acceso (no mostrado en las configuraciones enviadas). En Venezuela y Jamaica sí existe un switch central con routing habilitado.
+> **Nota:** R-Colombia no tiene un switch central de capa 3; sus subinterfaces (`G0/0.40` y `G0/0.50`) se conectan directamente a un switch de acceso. En Venezuela y Jamaica sí existe un switch central con routing habilitado.
 
 ---
 
