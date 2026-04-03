@@ -1,6 +1,6 @@
 🇪🇸 **Español** | 🇬🇧 [English](README-EN.md)
 
-# Multi-site-enterprise-network (OSPF + VLAN + DHCP + LACP + RSTP)
+# 🌐 Multi-Site Enterprise Network: OSPF, VLANs, DHCP, LACP & RSTP
 
 <div align="center">
  
