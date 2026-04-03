@@ -229,13 +229,13 @@ VLAN0070
 
 | Prueba | Captura |
 |--------|---------|
-| Ping entre VLANs | `screenshots/01_ping_intervlan.png` |
-| Vecinos OSPF | `screenshots/02_ospf_neighbors.png` |
-| DHCP Bindings | `screenshots/03_dhcp_bindings.png` |
-| EtherChannel Summary | `screenshots/04_etherchannel_summary.png` |
-| VLAN Brief (en lugar de VTP) | `screenshots/05_vlan_brief.png` |
-| Trunk ports | `screenshots/06_trunk_ports.png` |
-| PortFast + BPDUGuard | `screenshots/07_portfast_bpduguard.png` |
+| Ping entre VLANs | ![Ping VLANs](screenshots/01_ping_intervlan.png) |
+| Vecinos OSPF | ![OSPF Neighbors](screenshots/02_ospf_neighbors.png) |
+| DHCP Bindings | ![DHCP](screenshots/03_dhcp_bindings.png) |
+| EtherChannel Summary | ![EtherChannel](screenshots/04_etherchannel_summary.png) |
+| VLAN Brief | ![VLAN Brief](screenshots/05_vlan_brief.png) |
+| Trunk ports | ![Trunk](screenshots/06_trunk_ports.png) |
+| PortFast + BPDUGuard | ![PortFast](screenshots/07_portfast_bpduguard.png) |
 
 ## 📁 Estructura del proyecto
 
@@ -289,15 +289,15 @@ show spanning-tree summary
 
 ## 🧪 Resultados obtenidos
 
-- ✔ Comunicación entre todas las VLANs (inter-VLAN routing)
-- ✔ Conectividad completa entre todas las sedes (anillo OSPF)
-- ✔ DHCP centralizado funcionando correctamente
-- ✔ Redundancia operativa con LACP (EtherChannel)
-- ✔ Convergencia rápida con Rapid-PVST
-- ✔ Seguridad aplicada en capa 2 (PortFast + BPDU Guard)
-- ✔ Interfaces no utilizadas apagadas (shutdown)
-- ✔ Relay DHCP mediante ip helper-address
-- 
+- Comunicación entre todas las VLANs (inter-VLAN routing)
+- Conectividad completa entre todas las sedes (anillo OSPF)
+- DHCP centralizado funcionando correctamente
+- Redundancia operativa con LACP (EtherChannel)
+- Convergencia rápida con Rapid-PVST
+- Seguridad aplicada en capa 2 (PortFast + BPDU Guard)
+- Interfaces no utilizadas apagadas (shutdown)
+- Relay DHCP mediante ip helper-address
+
 #### 👨‍💻 Autor
 
 **Fred Castillo**  
