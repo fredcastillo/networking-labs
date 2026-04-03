@@ -15,8 +15,6 @@
 [![Security](https://img.shields.io/badge/Security-Layer_2-FF0000?style=for-the-badge&logo=cisco)](https://www.cisco.com/c/en/us/products/security/what-is-network-security.html)
 [![Status](https://img.shields.io/badge/Status-Completed-00AA00?style=for-the-badge&logo=checkmarx)](https://github.com/fredcastillo)
 [![Documentation](https://img.shields.io/badge/Documentation-Full-4CAF50?style=for-the-badge&logo=readthedocs)](https://github.com/fredcastillo)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Fred_Castillo-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fredcastillo11/)
-[![GitHub](https://img.shields.io/badge/GitHub-fredcastillo-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/fredcastillo)
 ![Topology](diagrams/topology.png)
 
 </div>
