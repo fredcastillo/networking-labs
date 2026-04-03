@@ -7,14 +7,12 @@
 [![OSPF](https://img.shields.io/badge/OSPF-Dynamic%20Routing-005C8A?style=for-the-badge)](https://www.cisco.com/c/en/us/support/ip/open-shortest-path-first-ospf/tsd-products-support-series-home.html)
 [![VLAN](https://img.shields.io/badge/VLAN-Segmentation-008000?style=for-the-badge)](https://www.cisco.com/c/en/us/support/lan-switching/virtual-lan-vlan/tsd-products-support-series-home.html)
 [![LACP](https://img.shields.io/badge/LACP-EtherChannel-FF6600?style=for-the-badge)](https://www.cisco.com/c/en/us/tech/lan-switching/etherchannel/index.html)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Fred%20Castillo-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/fredcastillo11/)
-[![GitHub](https://img.shields.io/badge/GitHub-fredcastillo-100000?style=for-the-badge&logo=github)](https://github.com/fredcastillo)
 
 </div>
    
 ---
 
-# 📡 Tri-Nation Enterprise Network (OSPF + VLAN + DHCP + LACP)
+# 📡 multi-site-enterprise-network (OSPF + VLAN + DHCP + LACP)
 
 ## 🧾 Descripción
 
@@ -245,7 +243,8 @@ VLAN0070
 
 ## 📁 Estructura del proyecto
 
-Tri-Nation-Enterprise-Network/
+```
+multi-site-enterprise-network/
 ├── pkt/
 │   └── tri-nation-network.pkt
 ├── configs/
@@ -276,6 +275,7 @@ Tri-Nation-Enterprise-Network/
 │   └── addressing-table.md
 ├── README.md
 └── README-EN.md
+```
 
 ## Cómo usar este proyecto
 
