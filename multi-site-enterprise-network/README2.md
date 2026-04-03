@@ -1,5 +1,6 @@
 🇪🇸 **Español** | 🇬🇧 [English](README-EN.md)
-
+<div align="center">
+ 
 [![Cisco](https://img.shields.io/badge/Cisco-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)](https://www.cisco.com/)
 [![Packet Tracer](https://img.shields.io/badge/Packet%20Tracer-8.2-1BA0D7?style=for-the-badge&logo=cisco)](https://www.netacad.com/)
 [![OSPF](https://img.shields.io/badge/OSPF-Dynamic%20Routing-005C8A?style=for-the-badge)](https://www.cisco.com/c/en/us/support/ip/open-shortest-path-first-ospf/tsd-products-support-series-home.html)
@@ -8,6 +9,19 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Fred%20Castillo-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/fredcastillo11/)
 [![GitHub](https://img.shields.io/badge/GitHub-fredcastillo-100000?style=for-the-badge&logo=github)](https://github.com/fredcastillo)
 
+<img width="583" height="494" alt="image" src="https://github.com/user-attachments/assets/a0a477b2-ce50-4311-81db-7e6d40b59624" />
+</div>
+<div align="center">
+   
+![Cisco](https://img.shields.io/badge/Cisco-Networking-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)
+![Packet Tracer](https://img.shields.io/badge/Simulator-Cisco%20Packet%20Tracer-blue?style=for-the-badge)
+![Routing](https://img.shields.io/badge/Routing-OSPF-orange?style=for-the-badge)
+![DHCP](https://img.shields.io/badge/Service-DHCP-green?style=for-the-badge)
+![Topology](https://img.shields.io/badge/Topology-Hub%20and%20Spoke-purple?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-black?style=for-the-badge)
+
+<img width="583" height="494" alt="image" src="https://github.com/user-attachments/assets/a0a477b2-ce50-4311-81db-7e6d40b59624" />
+</div>
 ---
 
 # 📡 Tri-Nation Enterprise Network (OSPF + VLAN + DHCP + LACP)
