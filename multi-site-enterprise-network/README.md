@@ -239,6 +239,8 @@ VLAN0070
 | STP rapid | ![STP rapid](screenshots/08_stp_rapid.png) |
 | VLAN Brief | ![VLAN Brief](screenshots/09_vlan_brief.png) |
 
+> **Nota:** PortFast y BPDU Guard fueron aplicados manualmente en puertos de acceso”.
+
 ## 📁 Estructura del proyecto
 
 ```
