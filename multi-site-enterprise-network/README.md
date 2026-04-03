@@ -5,7 +5,6 @@
 <div align="center">
  
 [![Cisco](https://img.shields.io/badge/Cisco-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)](https://www.cisco.com/)
-[![Packet Tracer](https://img.shields.io/badge/Cisco_Packet_Tracer-8.2-1BA0D7?style=for-the-badge&logo=cisco)](https://www.netacad.com/)
 [![OSPF](https://img.shields.io/badge/OSPF-Dynamic_Routing-005C8A?style=for-the-badge&logo=cisco)](https://www.cisco.com/c/en/us/support/ip/open-shortest-path-first-ospf/tsd-products-support-series-home.html)
 [![VLAN](https://img.shields.io/badge/VLAN-Segmentation-008000?style=for-the-badge&logo=cisco)](https://www.cisco.com/c/en/us/support/lan-switching/virtual-lan-vlan/tsd-products-support-series-home.html)
 [![EtherChannel](https://img.shields.io/badge/EtherChannel-LACP-FF6600?style=for-the-badge&logo=cisco)](https://www.cisco.com/c/en/us/tech/lan-switching/etherchannel/index.html)
