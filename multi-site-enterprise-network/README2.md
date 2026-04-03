@@ -8,6 +8,8 @@
 [![VLAN](https://img.shields.io/badge/VLAN-Segmentation-008000?style=for-the-badge)](https://www.cisco.com/c/en/us/support/lan-switching/virtual-lan-vlan/tsd-products-support-series-home.html)
 [![LACP](https://img.shields.io/badge/LACP-EtherChannel-FF6600?style=for-the-badge)](https://www.cisco.com/c/en/us/tech/lan-switching/etherchannel/index.html)
 
+![Topology](diagrams/topology.png)
+
 </div>
    
 ---
@@ -19,12 +21,6 @@
 Este proyecto consiste en el diseño e implementación de una red empresarial distribuida en cuatro sedes (República Dominicana, Jamaica, Colombia y Venezuela), simulada en **Cisco Packet Tracer 8.2**.
 
 Se aplican tecnologías y buenas prácticas de redes modernas, incluyendo enrutamiento dinámico OSPF, segmentación mediante VLANs, redundancia de enlaces con LACP, DHCP centralizado y medidas de seguridad en capa 2.
-
----
-
-## 🌍 Topología de Red
-
-![Topology](diagrams/topology.png)
 
 ---
 
