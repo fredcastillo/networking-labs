@@ -296,17 +296,18 @@ This lab can be used as a learning environment, configuration reference, or hand
 Cisco Packet Tracer 8.2 or later
 
 ## Steps
-Open the .pkt file located in /pkt
-Explore the topology and devices
-Review configurations in /configs
-Validation Commands
-ping → Verify connectivity across VLANs and sites
-show ip ospf neighbor → Check OSPF neighbors
-show ip route → Verify learned routes
-show ip dhcp binding → Confirm DHCP leases
-show etherchannel summary → Verify LACP
-show interfaces trunk → Check trunk links
-show spanning-tree summary → Validate STP
+
+- Open the .pkt file located in /pkt
+- Explore the topology and devices
+- Review configurations in /configs
+- Validation Commands
+- ping → Verify connectivity across VLANs and sites
+- show ip ospf neighbor → Check OSPF neighbors
+- show ip route → Verify learned routes
+- show ip dhcp binding → Confirm DHCP leases
+- show etherchannel summary → Verify LACP
+- show interfaces trunk → Check trunk links
+- show spanning-tree summary → Validate STP
 
 ### Objective
 
@@ -330,7 +331,8 @@ Fred Castillo
 Information Security Student
 Aspiring Red Team | Offensive Security
 
-
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Fred%20Castillo-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/fredcastillo11/)
+[![GitHub](https://img.shields.io/badge/GitHub-fredcastillo-100000?style=for-the-badge&logo=github)](https://github.com/fredcastillo)
 
 
 
