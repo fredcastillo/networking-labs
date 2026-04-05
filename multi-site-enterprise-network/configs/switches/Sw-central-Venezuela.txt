@@ -1,0 +1,208 @@
+! =========================================
+! Device: Sw-Central-Venezuela
+! Role: Layer 3 Switch
+! =========================================
+
+hostname Sw-Central-Venezuela
+!
+!
+no profinet
+!
+!
+!
+!
+!
+ip routing
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+no ip domain-lookup
+!
+!
+spanning-tree mode rapid-pvst
+!
+!
+!
+!
+!
+!
+interface Port-channel0
+!
+interface Port-channel1
+ switchport trunk native vlan 300
+ switchport trunk allowed vlan 10,20,300
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ spanning-tree link-type point-to-point
+!
+interface Port-channel2
+ switchport trunk native vlan 300
+ switchport trunk allowed vlan 10,20,300
+ spanning-tree link-type point-to-point
+!
+interface FastEthernet0/1
+ switchport trunk native vlan 300
+ switchport trunk allowed vlan 10,20,300
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ spanning-tree link-type point-to-point
+!
+interface FastEthernet0/2
+ switchport trunk native vlan 300
+ switchport trunk allowed vlan 10,20,300
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ spanning-tree link-type point-to-point
+ channel-protocol lacp
+ channel-group 0 mode active
+!
+interface FastEthernet0/3
+ switchport trunk native vlan 300
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ channel-protocol lacp
+ channel-group 0 mode active
+!
+interface FastEthernet0/4
+ switchport trunk native vlan 300
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ channel-protocol lacp
+ channel-group 0 mode active
+!
+interface FastEthernet0/5
+ switchport trunk native vlan 300
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ channel-protocol lacp
+ channel-group 0 mode active
+!
+interface FastEthernet0/6
+!
+interface FastEthernet0/7
+!
+interface FastEthernet0/8
+!
+interface FastEthernet0/9
+!
+interface FastEthernet0/10
+!
+interface FastEthernet0/11
+!
+interface FastEthernet0/12
+!
+interface FastEthernet0/13
+!
+interface FastEthernet0/14
+!
+interface FastEthernet0/15
+!
+interface FastEthernet0/16
+ switchport access vlan 30
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/17
+ switchport access vlan 30
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/18
+ switchport access vlan 30
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/19
+ switchport access vlan 30
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/20
+ switchport access vlan 30
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/21
+ switchport access vlan 30
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/22
+ switchport access vlan 30
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/23
+ switchport access vlan 30
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/24
+ switchport access vlan 30
+ switchport mode access
+ shutdown
+!
+interface GigabitEthernet0/1
+ description Conexin a R-Venezuela
+ no switchport
+ ip address 172.20.75.2 255.255.255.252
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/2
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan10
+ description Ingenieros
+ mac-address 0007.ec26.6801
+ ip address 10.75.8.1 255.255.255.0
+ ip helper-address 200.21.75.1
+!
+interface Vlan20
+ description finanzas
+ mac-address 0007.ec26.6802
+ ip address 10.75.9.1 255.255.255.128
+ ip helper-address 200.21.75.1
+!
+router ospf 1
+ router-id 3.3.3.3
+ log-adjacency-changes
+ network 172.20.75.0 0.0.0.3 area 0
+ network 10.75.9.0 0.0.0.127 area 0
+ network 10.75.8.0 0.0.0.255 area 0
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+!
+end

@@ -1,0 +1,181 @@
+! =========================================
+! Device: Sw-Central-Jamaica
+! Role: Layer 3 Switch
+! =========================================
+
+hostname Sw-Central-Jamaica
+!
+!
+no profinet
+!
+!
+!
+!
+!
+ip routing
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+no ip domain-lookup
+!
+!
+spanning-tree mode rapid-pvst
+spanning-tree vlan 1,70,80,300 priority 24576
+!
+!
+!
+!
+!
+!
+interface Port-channel1
+ switchport trunk native vlan 300
+ switchport trunk allowed vlan 70,80,300
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ spanning-tree link-type point-to-point
+!
+interface Port-channel2
+ switchport trunk native vlan 300
+ switchport trunk allowed vlan 70,80,300
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ spanning-tree link-type point-to-point
+!
+interface FastEthernet0/1
+ switchport trunk native vlan 300
+ switchport trunk allowed vlan 70,80,300
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ channel-protocol lacp
+ channel-group 1 mode active
+!
+interface FastEthernet0/2
+ switchport trunk native vlan 300
+ switchport trunk allowed vlan 70,80,300
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ channel-protocol lacp
+ channel-group 1 mode active
+!
+interface FastEthernet0/3
+ switchport trunk native vlan 300
+ switchport trunk allowed vlan 70,80,300
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ channel-protocol lacp
+ channel-group 2 mode active
+!
+interface FastEthernet0/4
+ switchport trunk native vlan 300
+ switchport trunk allowed vlan 70,80,300
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ channel-protocol lacp
+ channel-group 2 mode active
+!
+interface FastEthernet0/5
+!
+interface FastEthernet0/6
+!
+interface FastEthernet0/7
+!
+interface FastEthernet0/8
+!
+interface FastEthernet0/9
+!
+interface FastEthernet0/10
+!
+interface FastEthernet0/11
+!
+interface FastEthernet0/12
+!
+interface FastEthernet0/13
+!
+interface FastEthernet0/14
+!
+interface FastEthernet0/15
+!
+interface FastEthernet0/16
+!
+interface FastEthernet0/17
+!
+interface FastEthernet0/18
+!
+interface FastEthernet0/19
+!
+interface FastEthernet0/20
+!
+interface FastEthernet0/21
+!
+interface FastEthernet0/22
+!
+interface FastEthernet0/23
+!
+interface FastEthernet0/24
+!
+interface GigabitEthernet0/1
+ description Conexin a R-Jamaica
+ no switchport
+ ip address 172.10.75.2 255.255.255.252
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/2
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan70
+ description Admin
+ mac-address 00d0.d36a.1601
+ ip address 10.75.16.1 255.255.255.0
+ ip helper-address 200.21.75.1
+ ip helper-address 200.21.75.14
+!
+interface Vlan80
+ description Red
+ mac-address 00d0.d36a.1602
+ ip address 10.75.17.1 255.255.255.0
+ ip helper-address 200.21.75.1
+ ip helper-address 200.21.75.14
+!
+router ospf 1
+ router-id 6.6.6.6
+ log-adjacency-changes
+ network 172.10.75.0 0.0.0.3 area 0
+ network 10.75.16.0 0.0.0.255 area 0
+ network 10.75.17.0 0.0.0.255 area 0
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+!
+end
