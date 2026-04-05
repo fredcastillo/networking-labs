@@ -97,7 +97,7 @@ Se aplican tecnologías y buenas prácticas de redes modernas, incluyendo enruta
 
 Cada enlace es `/30`. Red base: `200.21.75.0/24`.
 
-| Enlace                          | Red             | IP R1          | IP R2          |
+| Enlace                          | Red             | IP R1          | IP R2         |
 |--------------------------------|-----------------|----------------|----------------|
 | R-RD ↔ R-Venezuela             | 200.21.75.0/30  | .1 (R-RD)      | .2 (Venezuela) |
 | R-Venezuela ↔ R-Colombia       | 200.21.75.4/30  | .5 (Venezuela) | .6 (Colombia)  |
@@ -146,7 +146,7 @@ ip dhcp pool JAMAICA-ADMIN
 
 ## OSPF en R-RD (enlaces seriales)
 
-``` cisco
+```cisco
 router ospf 1
  router-id 1.1.1.1
  network 192.21.75.0 0.0.0.255 area 0
@@ -156,7 +156,7 @@ router ospf 1
 
 ## Subinterfaces en R-Colombia (Router-on-a-Stick)
 
-``` cisco
+```cisco
 interface GigabitEthernet0/0.40
  description VLAN 40 VENTAS
  encapsulation dot1Q 40
@@ -250,7 +250,7 @@ VLAN0070
 ```
 multi-site-enterprise-network/
 ├── pkt/
-│   └── tri-nation-network.pkt
+│   └── multi-site-enterprise-network.pkt
 ├── configs/
 │   ├── routers/
 │   │   ├── R-RD.txt
@@ -265,6 +265,10 @@ multi-site-enterprise-network/
 │       ├── Sw-vene2.txt
 │       ├── Sw-vene3.txt
 │       └── Sw-vene4.txt
+│       └── Sw-Colombia1.txt
+│       └── Sw-Colombia2.txt
+│       └── Sw-Jamaica1.txt
+│       └── Sw-Jamaica2.txt
 ├── diagrams/
 │   └── topology.png
 ├── screenshots/
@@ -272,11 +276,11 @@ multi-site-enterprise-network/
 │   ├── 02_ospf_neighbors.png
 │   ├── 03_dhcp_bindings.png
 │   ├── 04_etherchannel_summary.png
-│   ├── 05_vlan_brief.png
+│   ├── 05_vtp_status.png
 │   ├── 06_trunk_ports.png
 │   └── 07_portfast_bpduguard.png
-├── docs/
-│   └── addressing-table.md
+│   └── 08_stp_rapid.png
+│   └── 09_vlan_brief.png
 ├── README.md
 └── README-EN.md
 ```
