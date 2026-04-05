@@ -284,22 +284,35 @@ multi-site-enterprise-network/
 ├── README.md
 └── README-EN.md
 ```
-
 ## Cómo usar este proyecto
 
-Abrir el archivo .pkt en Cisco Packet Tracer 8.2 o superior.
-Revisar las configuraciones completas en la carpeta /configs.
+Este laboratorio puede ser utilizado como entorno de aprendizaje, referencia de configuración o práctica para redes empresariales.
 
-**Validar el funcionamiento con los siguientes comandos:**
+### Requisitos
+- Cisco Packet Tracer 8.2 o superior
 
-ping (entre VLANs y entre países)
-show ip ospf neighbor
-show ip dhcp binding
-show etherchannel summary
-show interfaces trunk
-show spanning-tree summary
+### ▶️ Ejecución
+1. Abrir el archivo `.pkt` ubicado en `/pkt`
+2. Explorar la topología y dispositivos
+3. Revisar las configuraciones en `/configs`
 
-## 🧪 Resultados obtenidos
+### Validaciones recomendadas
+
+Ejecutar los siguientes comandos para verificar el funcionamiento:
+
+- `ping` → Validar conectividad entre VLANs y entre sedes
+- `show ip ospf neighbor` → Verificar vecinos OSPF
+- `show ip route` → Confirmar rutas aprendidas
+- `show ip dhcp binding` → Validar asignación DHCP
+- `show etherchannel summary` → Comprobar LACP
+- `show interfaces trunk` → Validar enlaces trunk
+- `show spanning-tree summary` → Verificar STP
+
+### Objetivo
+
+El objetivo es analizar cómo interactúan múltiples tecnologías de red en un entorno distribuido, replicando escenarios reales de infraestructura empresarial.
+
+## Resultados obtenidos
 
 - Comunicación entre todas las VLANs (inter-VLAN routing)
 - Conectividad completa entre todas las sedes (anillo OSPF)
