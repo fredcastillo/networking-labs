@@ -58,7 +58,7 @@ This lab simulates a corporate network segmented into **VLANs**, with **multi-ar
 
 ---
 
-## 🔧 Implemented Features
+## Implemented Features
 
 ### 🔹 Multi-Area OSPF
 - **R1** is an ABR (Area Border Router) between Area 0 and Area 2.
@@ -120,7 +120,7 @@ In the `screenshots/` folder you will find evidence of:
 
 ---
 
-## 🧠 Technologies Used
+## Technologies Used
 
 | Technology       | Description                               |
 |------------------|-------------------------------------------|
