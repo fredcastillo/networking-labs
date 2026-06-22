@@ -3,14 +3,13 @@
 <div align="center">
 
 # 🖧 Multiarea OSPF Campus Infrastructure
-![Topology](diagrams/topology.png)
-
 ![Cisco](https://img.shields.io/badge/Cisco-Packet%20Tracer-1BA0D7?style=for-the-badge&logo=cisco)
 ![OSPF](https://img.shields.io/badge/OSPF-Multiarea-FF6F00?style=for-the-badge&logo=openstreetmap)
 ![VLAN](https://img.shields.io/badge/VLAN-802.1Q-0052CC?style=for-the-badge&logo=)
 ![DHCP](https://img.shields.io/badge/DHCP-Centralized-4B8BBE?style=for-the-badge&logo=)
 ![DMZ](https://img.shields.io/badge/DMZ-Zone-important?style=for-the-badge&logo=)
 
+![Topology](diagrams/topology.png)
 </div>
 
 ---
