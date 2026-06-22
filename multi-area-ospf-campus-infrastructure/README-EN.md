@@ -34,7 +34,7 @@ This lab simulates a corporate network segmented into **VLANs**, with **multi-ar
 - **Router R1** (Cisco 2911): Main gateway, DHCP server, DMZ connection, and OSPF backbone.
 - **Multilayer Switch SW-MULTICAPA**: Inter-VLAN routing, OSPF Area 1, trunk to R1.
 - **Switch ZONA-DMZ**: Access switch for the DMZ, with VLANs 100 and 200.
-- **Access switches** (not configured in this extract): connect hosts from each department.
+- **Access switches**: connect hosts from each department.
 
 ---
 
