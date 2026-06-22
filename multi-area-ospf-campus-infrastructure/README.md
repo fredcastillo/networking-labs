@@ -143,12 +143,6 @@ En la carpeta `screenshots/` encontrarás evidencias de:
 
 ---
 
-## 📄 Licencia
-
-Este proyecto se comparte con fines educativos. Puedes usarlo, modificarlo y distribuirlo libremente.
-
----
-
 #### 👨‍💻 Autor
 
 **Fred Castillo**  
