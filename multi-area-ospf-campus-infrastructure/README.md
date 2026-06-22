@@ -3,6 +3,7 @@
 <div align="center">
 
 # 🖧 Multiarea OSPF + DMZ Network Lab
+![Topología](Diagrams/topology.png)
 
 ![Cisco](https://img.shields.io/badge/Cisco-Packet%20Tracer-1BA0D7?style=for-the-badge&logo=cisco)
 ![OSPF](https://img.shields.io/badge/OSPF-Multiarea-FF6F00?style=for-the-badge&logo=openstreetmap)
@@ -14,7 +15,7 @@
 
 ---
 
-## 📌 Descripción
+## Descripción
 
 Este laboratorio simula una red corporativa segmentada en **VLANs**, con enrutamiento **OSPF multiárea**, un **servidor DHCP centralizado** y una **zona DMZ** aislada para servicios públicos. La topología está diseñada para demostrar conceptos avanzados de redes Cisco, como:
 
@@ -25,13 +26,11 @@ Este laboratorio simula una red corporativa segmentada en **VLANs**, con enrutam
 - Trunking y VLAN nativa.
 - Zona DMZ con VLANs dedicadas para servidores web y cloud.
 
-> ✅ **Objetivo:** Servir como material de estudio, práctica o referencia para implementaciones reales de redes empresariales.
+> **Objetivo:** Servir como material de estudio, práctica o referencia para implementaciones reales de redes empresariales.
 
 ---
 
 ## 🗺️ Topología
-
-![Topología](Diagrams/topology.png)
 
 - **Router R1** (Cisco 2911): Gateway principal, servidor DHCP, conexión a DMZ y backbone OSPF.
 - **Switch Multicapa SW-MULTICAPA** (Layer 3): Enrutamiento inter-VLAN, OSPF Área 1, troncal hacia R1.
@@ -95,13 +94,13 @@ Todos los dispositivos tienen sus configuraciones completas en la carpeta `Confi
 - `R1-config.txt`
 - `SW-MULTICAPA-config.txt`
 - `ZONA-DMZ-config.txt`
-- `Switch-Acceso-XX-config.txt` (si se añaden)
+- `Switch-Acceso-XX-config.txt`
 
 Estos archivos pueden ser copiados a dispositivos reales o importados en Packet Tracer.
 
 ---
 
-## 🚀 Cómo Usar
+## Cómo Usar
 
 1. **Descarga** el archivo `.pkt` de la carpeta `pkt/`.
 2. **Ábrelo** con Cisco Packet Tracer (versión 8.2 o superior recomendada).
@@ -122,7 +121,7 @@ En la carpeta `screenshots/` encontrarás evidencias de:
 
 ---
 
-## 🧠 Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 | Tecnología       | Descripción                               |
 |------------------|-------------------------------------------|
