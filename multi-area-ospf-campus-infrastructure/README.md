@@ -3,7 +3,7 @@
 <div align="center">
 
 # 🖧 Multiarea OSPF + DMZ Network Lab
-![Topología](Diagrams/topology.png)
+![Topología](diagrams/topology.png)
 
 ![Cisco](https://img.shields.io/badge/Cisco-Packet%20Tracer-1BA0D7?style=for-the-badge&logo=cisco)
 ![OSPF](https://img.shields.io/badge/OSPF-Multiarea-FF6F00?style=for-the-badge&logo=openstreetmap)
