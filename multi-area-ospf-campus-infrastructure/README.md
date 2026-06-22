@@ -35,7 +35,7 @@ Este laboratorio simula una red corporativa segmentada en **VLANs**, con enrutam
 - **Router R1** (Cisco 2911): Gateway principal, servidor DHCP, conexión a DMZ y backbone OSPF.
 - **Switch Multicapa SW-MULTICAPA** (Layer 3): Enrutamiento inter-VLAN, OSPF Área 1, troncal hacia R1.
 - **Switch ZONA-DMZ**: Switch de acceso para la DMZ, con VLANs 100 y 200.
-- **Switches de acceso** (no configurados en este extracto): conectan los hosts de cada departamento.
+- **Switches de acceso**: conectan los hosts de cada departamento.
 
 ---
 
