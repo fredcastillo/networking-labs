@@ -1,0 +1,150 @@
+! =========================================
+! Device: R1
+! Role: Core Router + DHCP Server
+! Area: 0 (Connected to area 2)
+! =========================================
+
+hostname R1
+!
+!
+!
+!
+ip dhcp excluded-address 192.168.10.1 192.168.10.9
+ip dhcp excluded-address 192.168.20.1 192.168.20.9
+ip dhcp excluded-address 192.168.30.1 192.168.30.9
+ip dhcp excluded-address 192.168.40.1 192.168.40.9
+ip dhcp excluded-address 192.168.50.1 192.168.50.9
+ip dhcp excluded-address 192.168.60.1 192.168.60.9
+ip dhcp excluded-address 192.168.70.1 192.168.70.9
+ip dhcp excluded-address 192.168.80.1 192.168.80.9
+ip dhcp excluded-address 192.168.100.1 192.168.100.9
+ip dhcp excluded-address 192.168.200.1 192.168.200.9
+!
+ip dhcp pool LAN10
+ network 192.168.10.0 255.255.255.0
+ default-router 192.168.10.1
+ dns-server 8.8.8.8
+ip dhcp pool LAN20
+ network 192.168.20.0 255.255.255.0
+ default-router 192.168.20.1
+ dns-server 8.8.8.8
+ip dhcp pool LAN30
+ network 192.168.30.0 255.255.255.0
+ default-router 192.168.30.1
+ dns-server 8.8.8.8
+ip dhcp pool LAN40
+ network 192.168.40.0 255.255.255.0
+ default-router 192.168.40.1
+ dns-server 8.8.8.8
+ip dhcp pool LAN50
+ network 192.168.50.0 255.255.255.0
+ default-router 192.168.50.1
+ dns-server 8.8.8.8
+ip dhcp pool LAN60
+ network 192.168.60.0 255.255.255.0
+ default-router 192.168.60.1
+ dns-server 8.8.8.8
+ip dhcp pool LAN70
+ network 192.168.70.0 255.255.255.0
+ default-router 192.168.70.1
+ dns-server 8.8.8.8
+ip dhcp pool LAN80
+ network 192.168.80.0 255.255.255.0
+ default-router 192.168.80.1
+ dns-server 8.8.8.8
+ip dhcp pool LAN100
+ network 192.168.100.0 255.255.255.0
+ default-router 192.168.100.1
+ dns-server 8.8.8.8
+ip dhcp pool LAN200
+ network 192.168.200.0 255.255.255.0
+ default-router 192.168.200.1
+ dns-server 8.8.8.8
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+!
+license udi pid CISCO2911/K9 sn FTX152406QF-
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+no ip domain-lookup
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ description Conexin a ZONA-DMZ
+ no ip address
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0.100
+ encapsulation dot1Q 100
+ ip address 192.168.100.1 255.255.255.0
+ ip ospf 10 area 2
+!
+interface GigabitEthernet0/0.200
+ encapsulation dot1Q 200
+ ip address 192.168.200.1 255.255.255.0
+ ip ospf 10 area 2
+!
+interface GigabitEthernet0/1
+ description Conexin al SW-MULTICAPA
+ ip address 200.10.1.1 255.255.255.0
+ ip ospf 10 area 0
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/2
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router ospf 10
+ router-id 1.1.1.1
+ log-adjacency-changes
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end

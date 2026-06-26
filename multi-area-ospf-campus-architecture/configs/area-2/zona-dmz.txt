@@ -1,0 +1,127 @@
+! =========================================
+! Device: ZONA-SWITCH
+! Role: Access Switch
+! Area: 2
+! =========================================
+
+
+hostname ZONA-DMZ
+!
+!
+!
+no ip domain-lookup
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+interface FastEthernet0/1
+ switchport access vlan 100
+ switchport mode access
+!
+interface FastEthernet0/2
+ switchport access vlan 100
+ switchport mode access
+!
+interface FastEthernet0/3
+ switchport access vlan 100
+ switchport mode access
+!
+interface FastEthernet0/4
+ switchport access vlan 200
+ switchport mode access
+!
+interface FastEthernet0/5
+ switchport access vlan 200
+ switchport mode access
+!
+interface FastEthernet0/6
+ switchport access vlan 200
+ switchport mode access
+!
+interface FastEthernet0/7
+!
+interface FastEthernet0/8
+!
+interface FastEthernet0/9
+!
+interface FastEthernet0/10
+!
+interface FastEthernet0/11
+!
+interface FastEthernet0/12
+!
+interface FastEthernet0/13
+!
+interface FastEthernet0/14
+!
+interface FastEthernet0/15
+!
+interface FastEthernet0/16
+!
+interface FastEthernet0/17
+!
+interface FastEthernet0/18
+!
+interface FastEthernet0/19
+!
+interface FastEthernet0/20
+!
+interface FastEthernet0/21
+!
+interface FastEthernet0/22
+!
+interface FastEthernet0/23
+!
+interface FastEthernet0/24
+!
+interface GigabitEthernet0/1
+ switchport trunk native vlan 99
+ switchport trunk allowed vlan 100,200
+ switchport mode trunk
+!
+interface GigabitEthernet0/2
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan100
+ description SERVIDORES WEB
+ ip address 192.168.100.1 255.255.255.0
+!
+interface Vlan200
+ description SERVIDORES CLOUD
+ ip address 192.168.200.1 255.255.255.0
+!
+!
+!
+!
+line con 0
+!
+line vty 0 4
+ login
+line vty 5 15
+ login
+!
+!
+!
+!
+end
+
+ ZONA-DMZ#show vlan brief
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Fa0/7, Fa0/8, Fa0/9, Fa0/10
+                                                Fa0/11, Fa0/12, Fa0/13, Fa0/14
+                                                Fa0/15, Fa0/16, Fa0/17, Fa0/18
+                                                Fa0/19, Fa0/20, Fa0/21, Fa0/22
+                                                Fa0/23, Fa0/24, Gig0/2
+100  Servidor-web                     active    Fa0/1, Fa0/2, Fa0/3
+200  Servidor-cloud                   active    Fa0/4, Fa0/5, Fa0/6
+1002 fddi-default                     active    
+1003 token-ring-default               active    
+1004 fddinet-default                  active    
+1005 trnet-default                    active   
