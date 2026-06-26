@@ -1,5 +1,5 @@
 ! =========================================
-! Device: ZONA-SWITCH
+! Device: ZONA-DMZ
 ! Role: Access Switch
 ! Area: 2
 ! =========================================
