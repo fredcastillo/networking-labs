@@ -2,7 +2,7 @@
 
 <div align="center">
 
-# 🖧 Multiarea OSPF Campus Infrastructure
+# 🖧 Multiarea OSPF Campus Architecture
 ![Cisco](https://img.shields.io/badge/Cisco-Packet%20Tracer-1BA0D7?style=for-the-badge&logo=cisco)
 ![OSPF](https://img.shields.io/badge/OSPF-Multiarea-FF6F00?style=for-the-badge&logo=openstreetmap)
 ![VLAN](https://img.shields.io/badge/VLAN-802.1Q-0052CC?style=for-the-badge&logo=)
